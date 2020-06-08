@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect} from 'react';
 
-import { Text, Alert } from 'react-native';
+import {Text, Alert} from 'react-native';
 import AsyncStorage from '@react-native-community/async-storage';
 
 import {
@@ -24,13 +24,13 @@ import {
   SaveButton,
 } from './styles';
 
-import { formatPrice } from '../../util/format';
+import {formatPrice} from '../../util/format';
 
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import ListItem from '../../Components/ListItem';
 
-export default function List({ route, navigation }) {
+export default function List({route, navigation}) {
   //- state lista
   const [lists, setLists] = useState([]);
   const [idList, setIdList] = useState(route.params?.id);
@@ -217,12 +217,12 @@ export default function List({ route, navigation }) {
       //- caso não tenha o nome do item
       if (!content) {
         Alert.alert('', 'Por favor insira um nome para o item!', [
-          { text: 'OK' },
+          {text: 'OK'},
         ]);
       } else {
         //- caso não tenha a quantidade do item
         Alert.alert('', 'Por favor insira a quantidade do item!', [
-          { text: 'OK' },
+          {text: 'OK'},
         ]);
       }
     }
@@ -242,7 +242,7 @@ export default function List({ route, navigation }) {
     await setLists(editedLists);
     await AsyncStorage.setItem('lists', JSON.stringify(lists));
     Alert.alert('', 'Lista salva com sucesso!', [
-      { text: 'Continuar editando' },
+      {text: 'Continuar editando'},
       {
         text: 'Sair',
         onPress: () => navigation.navigate('Main'),
@@ -267,7 +267,7 @@ export default function List({ route, navigation }) {
 
       <ListContainer
         data={listItems}
-        renderItem={({ item }) => (
+        renderItem={({item}) => (
           <ListItem
             content={item.content}
             quantity={item.quantity}
@@ -292,8 +292,7 @@ export default function List({ route, navigation }) {
       <SaveButtonContainer
         onPress={() => {
           saveList(idList);
-        }}
-      >
+        }}>
         <SaveButton>Salvar Lista</SaveButton>
       </SaveButtonContainer>
 
@@ -337,7 +336,7 @@ export default function List({ route, navigation }) {
           returnKeyType="send"
           value={price ? String(price) : ''}
           onChangeText={(price) => {
-            setPrice(price);
+            price ? setPrice(price) : setPrice(0);
           }}
           blurOnSubmit={true}
           ref={(input) => {
@@ -355,8 +354,7 @@ export default function List({ route, navigation }) {
             this.price.blur();
             this.amount.blur();
             insertItem();
-          }}
-        >
+          }}>
           <Icon name="send" size={25} />
         </SendButton>
       </NewItemContainer>
