@@ -15,5 +15,5 @@ e atualizar em tempo real a inserção e remoção de itens
 <li>Salvar lista</li>
 <li>Editar lista</li>
 <li>Calcular os valores dos itens informando o total</li>
-<li>Compartilhar lista https://img.shields.io/badge/Feature-inProgress-orange</li>
+<li>Compartilhar lista <img src="https://img.shields.io/badge/Feature-inProgress-orange" alt="badge-inProgress" title="In Progress" /></li>
 </ol>
