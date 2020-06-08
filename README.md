@@ -11,9 +11,9 @@ e atualizar em tempo real a inserção e remoção de itens
 
 <h3>Features</h3>
 <ol>
-<li>Criar lista</li>
-<li>Salvar lista</li>
-<li>Editar lista</li>
-<li>Calcular os valores dos itens informando o total</li>
-<li>Compartilhar lista <img src="https://img.shields.io/badge/Feature-inProgress-orange" alt="badge-inProgress" title="In Progress" /></li>
+<li>Criar lista <img src="https://img.shields.io/badge/Feature-Done-brightgreen" alt="badge-Done" title="Feature Done" /></li>
+<li>Salvar lista <img src="https://img.shields.io/badge/Feature-Done-brightgreen" alt="badge-Done" title="Feature Done" /></li>
+<li>Editar lista <img src="https://img.shields.io/badge/Feature-Done-brightgreen" alt="badge-Done" title="Feature Done" /></li>
+<li>Calcular os valores dos itens informando o total <img src="https://img.shields.io/badge/Feature-Done-brightgreen" alt="badge-Done" title="Feature Done" /></li>
+<li>Compartilhar lista <img src="https://img.shields.io/badge/Feature-inProgress-orange" alt="badge-inProgress" title="Feature In Progress" /></li>
 </ol>
