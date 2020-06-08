@@ -1,7 +1,12 @@
 <h1 align="center">
    <img src="./src/assets/logo.png" alt="Nossa Lista" title="Nossa Lista" width="300px"/>
 </h1>
-
+<p>
+Download do app no meu GDrive >>>  
+<a href="https://drive.google.com/file/d/1VdPGNDhVfULllz-REPQvLi7lkvT40VFS/view?usp=sharing">
+<img src="https://img.shields.io/badge/Download-AppNossaLista-brightgreen" alt="badge-Download" title="Download app nossa lista" />
+</a>
+</p>
 <p>App criado para resolver o problema que eu e minha esposa tivemos com
 uma lista de mercado onde sempre esqueciamos(eu) de comprar algo.</p>
 
